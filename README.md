@@ -106,7 +106,7 @@ If you wish to run this project on your local machine
 
 Follow the given steps:
 
-* Clone our repository 
+* Clone our repository https://github.com/sibi12a/Doctor-Appointment-Booking.git
 
 * Open our code in VS code
 
