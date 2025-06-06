@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Application</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, Geneva, sans-serif;
+            background-color: #e9f1f7;
+            /* Changed to match the navbar color */
+            margin: 0;
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        #buttons button {
+            margin-right: 15px;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        #buttons button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e9f1f7;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            color: #007bff;
+            margin-left: 50px;
+        }
+
+        #buttons {
+            margin-right: 30px;
+        }
+
+        #login {
+            margin-right: 20px;
+        }
+
+        #maincard {
+            margin-bottom: 50px;
+            animation: fadeInUp 2s ease;
+            /* Fade-in animation */
+        }
+
+        #services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            text-align: center;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service-card h1 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        #index h1 {
+            cursor: pointer;
+        }
+
+        #index h1,
+        #maincard h1 {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        #offer {
+            font-size: 80px;
+        }
+
+        footer {
+            background-color: #e9f1f7;
+            margin-top: 100px;
+            padding: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Scroll Animation */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 768px) {
+            nav h1 {
+                font-size: 24px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+
+            #services img {
+                width: 90%;
+                height: auto;
+            }
+
+            #offer {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="index">
+            <h1>We-Connect</h1>
+        </div>
+
+        <div id="buttons">
+            <button id="login">Login</button>
+
+            <button id="signup">SignUp</button>
+        </div>
+    </nav>
+
+    <div id="maincard">
+        <div>
+            <h1>Welcome to Doctor Appointment Booking Application</h1>
+        </div>
+
+        <div>
+            <img src="https://www.pococare.com/Images/banner_image.png" alt="wecare_image">
+        </div>
+    </div>
+
+    <h1 id="offer">What we offer</h1>
+
+    <div id="services">
+        <div class="service-card">
+            <h3>Best Doctors Are Available All Over India</h3>
+            <img src="https://img.freepik.com/free-photo/doctor-nurses-special-equipment_23-2148980721.jpg?w=740&t=st=1687871336~exp=1687871936~hmac=cafebc5917234993975d2efff33e262d206fea3c6d412d1c81b4558437349277"
+                alt="">
+        </div>
+
+        <div class="service-card">
+            <h3>Just Signup and Start Booking appointments</h3>
+            <img src="https://img.freepik.com/free-photo/young-doctor-supporting-his-patient_1098-2237.jpg?w=740&t=st=1687871522~exp=1687872122~hmac=9b9f7ba79749f10e06f6beef15573378b2580eaba5912f123f461a0317d58ea8"
+                alt="">
+        </div>
+
+        <div class="service-card">
+            <h3>Here, Our Doctors offer Video Call Consultations, Cool Isn't it?</h3>
+            <img src="https://img.freepik.com/free-photo/old-disabled-woman-lying-hospital-bed-having-online-video-call-with-doctor-nurse-is-her_482257-20630.jpg?w=826&t=st=1687871700~exp=1687872300~hmac=0eda02317e5edf30b301b74a3acf912b496e8e67032765f2bc11d63e44e3fd39"
+                alt="">
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="https://github.com/Ragul-05">Follow us </a>
+        <br>
+        <br>
+        <a href="https://github.com/Ragul-05">For More information</a>
+    </footer>
+
+    <script>
+        const signup = document.getElementById("signup");
+        signup.addEventListener("click", () => {
+            window.location.href = `./view/signup.html`;
+        });
+
+        const login = document.getElementById("login");
+        login.addEventListener("click", () => {
+            window.location.href = "./view/signin.html";
+        });
+
+        // Add scroll animation
+        const maincard = document.getElementById('maincard');
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 100) {
+                maincard.style.animation = 'fadeInUp 2s ease';
+            }
+        });
+    </script>
+</body>
+
+</html>
