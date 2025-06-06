@@ -5,7 +5,6 @@
 
 ### PS: As the backend deployed using Render, there is more than an expected delay, apologies for the inconvenience!
 
-## Demonstration Video: https://drive.google.com/file/d/1sAvTTrGPlbfzjCyN4ZQAwE8ncMNFI1z3/view?usp=sharing
 
 # Use these credentials to check out features:
 
@@ -63,12 +62,6 @@ email : pococare@gmail.com  password : pococare
 <img alt="Coder GIF" height=50 width=80 src="https://www.w3schools.com/whatis/img_npm.jpg" />
 
 
-
-
-# Live Demo Link https://wecareyou.vercel.app/ 
-
-# Backend deployed using RENDER https://pococare1.onrender.com/
-
 # Home Page
 ![image](https://github.com/DhaanuI/Pococare_assignment/assets/112754832/fc64ac55-26d5-438f-ba2c-39c75b6e5aa8)
 
@@ -113,7 +106,7 @@ If you wish to run this project on your local machine
 
 Follow the given steps:
 
-* Clone our repository https://github.com/DhaanuI/Pococare_assignment
+* Clone our repository 
 
 * Open our code in VS code
 
